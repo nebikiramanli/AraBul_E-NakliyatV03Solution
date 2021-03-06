@@ -1,0 +1,1278 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>lib12</name>
+    </assembly>
+    <members>
+        <member name="M:lib12.Collections.DictionaryExtension.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
+            <summary>
+            Gets the value for given key or default if key doesn't exist in dictionary
+            </summary>
+            <param name="dict">Dictionary</param>
+            <param name="key">The key</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableDefaultExtension.AverageOrDefault``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32})">
+            <summary>
+            Computes average, returns default value if collection is empty
+            </summary>
+            <param name="enumerable">The enumerable to get items</param>
+            <param name="selector">The selector to get values</param>
+            <returns>Average if enumerable is not empty, else zero</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableDefaultExtension.AverageOrDefault``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Nullable{System.Int32}})">
+            <summary>
+            Computes average, returns default value if collection is empty
+            </summary>
+            <param name="enumerable">The enumerable to get items</param>
+            <param name="selector">The selector to get values</param>
+            <returns>Average if enumerable is not empty, else null</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableDefaultExtension.AverageOrDefault``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int64})">
+            <summary>
+            Computes average, returns default value if collection is empty
+            </summary>
+            <param name="enumerable">The enumerable to get items</param>
+            <param name="selector">The selector to get values</param>
+            <returns>Average if enumerable is not empty, else zero</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableDefaultExtension.AverageOrDefault``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Nullable{System.Int64}})">
+            <summary>
+            Computes average, returns default value if collection is empty
+            </summary>
+            <param name="enumerable">The enumerable to get items</param>
+            <param name="selector">The selector to get values</param>
+            <returns>Average if enumerable is not empty, else null</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableDefaultExtension.AverageOrDefault``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})">
+            <summary>
+            Computes average, returns default value if collection is empty
+            </summary>
+            <param name="enumerable">The enumerable to get items</param>
+            <param name="selector">The selector to get values</param>
+            <returns>Average if enumerable is not empty, else zero</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableDefaultExtension.AverageOrDefault``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Nullable{System.Single}})">
+            <summary>
+            Computes average, returns default value if collection is empty
+            </summary>
+            <param name="enumerable">The enumerable to get items</param>
+            <param name="selector">The selector to get values</param>
+            <returns>Average if enumerable is not empty, else null</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableDefaultExtension.AverageOrDefault``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Computes average, returns default value if collection is empty
+            </summary>
+            <param name="enumerable">The enumerable to get items</param>
+            <param name="selector">The selector to get values</param>
+            <returns>Average if enumerable is not empty, else zero</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableDefaultExtension.AverageOrDefault``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Nullable{System.Double}})">
+            <summary>
+            Computes average, returns default value if collection is empty
+            </summary>
+            <param name="enumerable">The enumerable to get items</param>
+            <param name="selector">The selector to get values</param>
+            <returns>Average if enumerable is not empty, else null</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableDefaultExtension.AverageOrDefault``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Decimal})">
+            <summary>
+            Computes average, returns default value if collection is empty
+            </summary>
+            <param name="enumerable">The enumerable to get items</param>
+            <param name="selector">The selector to get values</param>
+            <returns>Average if enumerable is not empty, else zero</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableDefaultExtension.AverageOrDefault``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Nullable{System.Decimal}})">
+            <summary>
+            Computes average, returns default value if collection is empty
+            </summary>
+            <param name="enumerable">The enumerable to get items</param>
+            <param name="selector">The selector to get values</param>
+            <returns>Average if enumerable is not empty, else null</returns>
+        </member>
+        <member name="M:lib12.Collections.IListExtension.RemoveRange``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Removes from collection elements from other collection
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list">The list to remove elements from</param>
+            <param name="toRemove">Elements to remove</param>
+        </member>
+        <member name="M:lib12.Collections.IListExtension.RemoveRange``1(System.Collections.Generic.IList{``0},System.Predicate{``0})">
+            <summary>
+            Removes items by condition
+            </summary>
+            <param name="list">List of items</param>
+            <param name="condition">Condition to remove item</param>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Determines whether the specified enumerable is empty.
+            </summary>
+            <param name="enumerable">The enumerable to check</param>
+            <returns>True if enumerable is empty</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Determines whether enumerable is null or empty
+            </summary>
+            <param name="enumerable">The enumerable to check</param>
+            <returns>True if enumerable is null or empty</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.IsNotEmpty``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Determines whether enumerable is not empty
+            </summary>
+            <param name="enumerable">The enumerable to check</param>
+            <returns>True if enumerable is not empty</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.IsNotNullAndNotEmpty``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Determines whether enumerable is not null and not empty
+            </summary>
+            <param name="enumerable">The enumerable to check</param>
+            <returns>True if enumerable is not null and not empty</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Invoke action for each element in enumerable
+            </summary>
+            <param name="enumeration">The enumeration of items to invoke action on</param>
+            <param name="action">The action to invoke</param>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Converts enumerable to observable collection.
+            </summary>
+            <param name="enumeration">The enumeration to convert</param>
+            <returns>Converted observable collection</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.ToDelimitedString``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Converterts enumerable to delimited string
+            </summary>
+            <param name="enumerable">The enumerable to convert</param>
+            <param name="delimiter">The delimiter to use</param>
+            <returns>Delimited string</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.CollectionCompare``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Compares the content of two collections for equality.
+            http://stackoverflow.com/questions/50098/comparing-two-collections-for-equality
+            </summary>
+            <param name="first">The first collection.</param>
+            <param name="second">The second collection.</param>
+            <returns>True if both collections have the same content, false otherwise.</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.CastToEnumerable``1(System.Object)">
+            <summary>
+            Casts object to generic IEnumerable
+            </summary>
+            <param name="toCast">Object to cast</param>
+            <returns>Generic IEnumerable or null if it's possible</returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.ContainsOneElement``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Determines whether collection contains exactly one element
+            </summary>
+            <param name="enumerable">Collection to check</param>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.ContainsMultipleElements``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Determines whether collection contains exactly more than one element
+            </summary>
+            <param name="enumerable">Collection to check</param>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.GetNextElementOrDefault``1(System.Collections.Generic.IEnumerable{``0},``0)">
+            <summary>
+            Gets the next element after given or default
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="enumerable">The enumerable to search</param>
+            <param name="currentElement">The current element</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.GetPreviousElementOrDefault``1(System.Collections.Generic.IEnumerable{``0},``0)">
+            <summary>
+            Gets the previous element before given or default
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="enumerable">The enumerable to search</param>
+            <param name="currentElement">The current element</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.TakeLast``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            Takes last X elements
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="enumerable">The enumerable to take elements from</param>
+            <param name="count">The count to take</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Collections.IEnumerableExtension.Recover``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            If enumerable is null convert it into empty collection
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="enumerable">The enumerable.</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Data.Random.Rand.NextBool(System.Int32)">
+            <summary>
+            Returns a random boolean value with setted percent for true
+            </summary>
+            <param name="percentForTrue">Percent for generating true value</param>
+            <returns>Random boolean value</returns>
+        </member>
+        <member name="M:lib12.Data.Random.Rand.NextDouble(System.Double,System.Double)">
+            <summary>
+            Returns a double value between provided range
+            </summary>
+            <param name="start">Inclusive minimum value</param>
+            <param name="end">Inclusive maximum value</param>
+            <returns>Random double value between provided range</returns>
+        </member>
+        <member name="M:lib12.Data.Random.Rand.NextLowercaseLetter">
+            <summary>
+            Returns a lowercase letter
+            </summary>
+            <returns>Lowercase letter</returns>
+        </member>
+        <member name="M:lib12.Data.Random.Rand.NextString">
+            <summary>
+            Returns a random string
+            </summary>
+            <returns>Random string</returns>
+        </member>
+        <member name="M:lib12.Data.Random.Rand.NextString(System.Int32)">
+            <summary>
+            Returns a random string with provided length
+            </summary>
+            <param name="length">Returned string length</param>
+            <returns>Random string with provided length</returns>
+        </member>
+        <member name="M:lib12.Data.Random.Rand.NextDateTime(System.DateTime,System.DateTime)">
+            <summary>
+            Returns a random DateTime between provided range
+            </summary>     
+            <param name="from">Start date</param>
+            <param name="to">End date</param>
+            <returns>Random DateTime between provided range</returns>
+        </member>
+        <member name="T:lib12.Data.Random.FakeData">
+            <summary>
+            Lorem ipsum text
+            </summary>
+        </member>
+        <member name="P:lib12.Data.Random.FakeData.LoremIpsumParagraph">
+            <summary>
+            Gets one paragraph of Lorem ipsum text
+            </summary>
+        </member>
+        <member name="P:lib12.Data.Random.FakeData.LoremIpsumTwoParagraphs">
+            <summary>
+            Gets two paragraphs of Lorem ipsum text
+            </summary>
+        </member>
+        <member name="P:lib12.Data.Random.FakeData.LoremIpsumFiveParagraphs">
+            <summary>
+            Gets five paragraphs of Lorem ipsum text
+            </summary>
+        </member>
+        <member name="P:lib12.Data.Random.FakeData.Countries">
+            <summary>
+            List of countries
+            </summary>
+            <value>
+            The countries.
+            </value>
+        </member>
+        <member name="P:lib12.Data.Random.FakeData.CountryCodes">
+            <summary>
+            List of country codes.
+            </summary>
+            <value>
+            The country codes.
+            </value>
+        </member>
+        <member name="P:lib12.Data.Random.FakeData.Cities">
+            <summary>
+            List of cities
+            </summary>
+            <value>
+            The cities.
+            </value>
+        </member>
+        <member name="P:lib12.Data.Random.FakeData.Streets">
+            <summary>
+            List of streets
+            </summary>
+            <value>
+            The streets.
+            </value>
+        </member>
+        <member name="P:lib12.Data.Random.FakeData.MaleNames">
+            <summary>
+            List of male names
+            </summary>
+            <value>
+            The male names.
+            </value>
+        </member>
+        <member name="P:lib12.Data.Random.FakeData.FemaleNames">
+            <summary>
+            List of female names
+            </summary>
+            <value>
+            The female names.
+            </value>
+        </member>
+        <member name="P:lib12.Data.Random.FakeData.Surnames">
+            <summary>
+            List of surnames
+            </summary>
+            <value>
+            The surnames.
+            </value>
+        </member>
+        <member name="P:lib12.Data.Random.FakeData.Companies">
+            <summary>
+            List of companies
+            </summary>
+            <value>
+            The companies.
+            </value>
+        </member>
+        <member name="T:lib12.Data.QueryBuilding.Builders.SqlBuilder">
+            <summary>
+            Fluent sql commands builder
+            </summary>
+        </member>
+        <member name="P:lib12.Data.QueryBuilding.Builders.SqlBuilder.Select">
+            <summary>
+            Builds select query
+            </summary>
+        </member>
+        <member name="P:lib12.Data.QueryBuilding.Builders.SqlBuilder.Update">
+            <summary>
+            Builds update command
+            </summary>
+        </member>
+        <member name="P:lib12.Data.QueryBuilding.Builders.SqlBuilder.Delete">
+            <summary>
+            Builds delete command
+            </summary>
+        </member>
+        <member name="P:lib12.Data.QueryBuilding.Builders.SqlBuilder.Insert">
+            <summary>
+            Builds insert command
+            </summary>
+        </member>
+        <member name="P:lib12.Data.QueryBuilding.Structures.BaseQueryStructure.Table">
+            <summary>
+            Gets or sets the main table.
+            </summary>
+            <value>
+            The main table.
+            </value>
+        </member>
+        <member name="P:lib12.Data.QueryBuilding.Structures.BaseQueryStructure.MainCondition">
+            <summary>
+            Gets or sets the main WHERE condition.
+            </summary>
+            <value>
+            The main condition.
+            </value>
+        </member>
+        <member name="T:lib12.Data.QueryBuilding.Structures.Update.SetField">
+            <summary>
+            Represents set field in update command
+            </summary>
+        </member>
+        <member name="P:lib12.Data.QueryBuilding.Structures.Update.SetField.Field">
+            <summary>
+            Gets or sets the field name.
+            </summary>
+            <value>
+            The field.
+            </value>
+        </member>
+        <member name="P:lib12.Data.QueryBuilding.Structures.Update.SetField.Value">
+            <summary>
+            Gets or sets the field value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="M:lib12.Data.QueryBuilding.Structures.Update.SetField.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:lib12.Data.QueryBuilding.Structures.Update.SetField"/> class.
+            </summary>
+        </member>
+        <member name="M:lib12.Data.QueryBuilding.Structures.Update.SetField.#ctor(System.String,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:lib12.Data.QueryBuilding.Structures.Update.SetField"/> class.
+            </summary>
+            <param name="field">The field name.</param>
+            <param name="value">The field value.</param>
+        </member>
+        <member name="T:lib12.Data.QueryBuilding.Structures.Update.UpdateQueryStructure">
+            <summary>
+            Represents update command that is currently build
+            </summary>
+        </member>
+        <member name="P:lib12.Data.QueryBuilding.Structures.Update.UpdateQueryStructure.SetFields">
+            <summary>
+            Gets or sets the set fields.
+            </summary>
+            <value>
+            The set fields.
+            </value>
+        </member>
+        <member name="M:lib12.Extensions.StringExtension.FormatWith(System.String,System.Object[])">
+            <summary>
+            Formats given string with arguments
+            </summary>
+            <param name="formatString">The format string.</param>
+            <param name="args">The arguments</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Extensions.StringExtension.EqualsIgnoreCase(System.String,System.String)">
+            <summary>
+            Check if strings are equal with ignore case
+            </summary>
+            <param name="target"></param>
+            <param name="toCompare"></param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Extensions.StringExtension.Recover(System.String)">
+            <summary>
+            Returns empty string if given string is null
+            </summary>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="T:lib12.Extensions.DateTimeExtension">
+            <summary>
+            Extensions for System.DateTime
+            </summary>
+        </member>
+        <member name="M:lib12.Extensions.DateTimeExtension.ToUnixTimeStamp(System.DateTime)">
+            <summary>
+            Converts given DateTime to Unix time stamp - number of seconds from 1970-01-01
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Extensions.DateTimeExtension.ParseUnixTimeStamp(System.Int64)">
+            <summary>
+            Parse Unix time stamp - number of seconds from 1970-01-01 - to System.DateTime
+            </summary>
+            <param name="timestamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Extensions.DateTimeExtension.IsEmpty(System.DateTime)">
+            <summary>
+            Check if given DateTime is empty
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Extensions.EventHandlerExtension.Raise(System.EventHandler,System.Object)">
+            <summary>
+            Raises the event
+            </summary>
+            <param name="handler">The event to rise</param>
+            <param name="sender">The sender object</param>
+        </member>
+        <member name="M:lib12.Extensions.EventHandlerExtension.Raise(System.EventHandler,System.Object,System.EventArgs)">
+            <summary>
+            Raises the event
+            </summary>
+            <param name="handler">The event to rise</param>
+            <param name="sender">The sender object</param>
+            <param name="e">Event args</param>
+        </member>
+        <member name="M:lib12.Extensions.EventHandlerExtension.Raise``1(System.EventHandler{``0},System.Object,``0)">
+            <summary>
+            Raises the event
+            </summary>
+            <param name="handler">The event to rise</param>
+            <param name="sender">The sender object</param>
+            <param name="e">Event args</param>
+        </member>
+        <member name="M:lib12.Extensions.NullableBoolExtension.IsTrue(System.Nullable{System.Boolean})">
+            <summary>
+            Determines whether the specified nullable is not null and true.
+            </summary>
+            <param name="nullable">The nullable to check</param>
+        </member>
+        <member name="M:lib12.Extensions.NullableBoolExtension.IsTrueOrNull(System.Nullable{System.Boolean})">
+            <summary>
+            Determines whether the specified nullable is null or not null and true.
+            </summary>
+            <param name="nullable">The nullable to check</param>
+        </member>
+        <member name="M:lib12.Extensions.NullableBoolExtension.IsFalse(System.Nullable{System.Boolean})">
+            <summary>
+            Determines whether the specified nullable is not null and false.
+            </summary>
+            <param name="nullable">The nullable to check</param>
+        </member>
+        <member name="M:lib12.Extensions.NullableBoolExtension.IsFalseOrNull(System.Nullable{System.Boolean})">
+            <summary>
+            Determines whether the specified nullable is null or not null and false.
+            </summary>
+            <param name="nullable">The nullable to check</param>
+        </member>
+        <member name="M:lib12.FunctionalFlow.CollectionObjectCheckExtension.PackIntoArray``1(``0)">
+            <summary>
+            Packs given object into array.
+            </summary>
+            <typeparam name="TSource">The type of the object.</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.FunctionalFlow.CollectionObjectCheckExtension.PackIntoList``1(``0)">
+            <summary>
+            Packs given object into array.
+            </summary>
+            <typeparam name="TSource">The type of the object.</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.FunctionalFlow.CollectionObjectCheckExtension.In``1(``0,System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Checks if given collection contains this object
+            </summary>
+            <typeparam name="TSource">The type of the object.</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.FunctionalFlow.CollectionObjectCheckExtension.NotIn``1(``0,System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Checks if given collection does not contains this object
+            </summary>
+            <typeparam name="TSource">The type of the object.</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.FunctionalFlow.MaybeExtension.Recover``1(``0,``0)">
+            <summary>
+            If object is null recover to function flow with given object
+            </summary>
+        </member>
+        <member name="M:lib12.FunctionalFlow.MaybeExtension.ThrowExceptionIfNull``1(``0)">
+            <summary>
+            Throw exception if checked object is null
+            </summary>
+        </member>
+        <member name="M:lib12.FunctionalFlow.MaybeExtension.ThrowExceptionIfNull``1(``0,System.Exception)">
+            <summary>
+            Throw exception if checked object is null
+            </summary>
+        </member>
+        <member name="M:lib12.FunctionalFlow.ParamsObjectCheckExtension.Is``1(``0,``0)">
+            <summary>
+            Determines whether given source equals another
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">First source</param>
+            <param name="value">Second source</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.FunctionalFlow.ParamsObjectCheckExtension.Is``1(``0,``0[])">
+            <summary>
+            Determines whether given source is in given source collection
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">First source</param>
+            <param name="values">source collection to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.FunctionalFlow.ParamsObjectCheckExtension.IsNot``1(``0,``0)">
+            <summary>
+            Determines whether given source does not equals another
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">First source</param>
+            <param name="value">Second source</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.FunctionalFlow.ParamsObjectCheckExtension.IsNot``1(``0,``0[])">
+            <summary>
+            Determines whether given source is not in given source collection
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">First source</param>
+            <param name="values">source collection to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.FunctionalFlow.SimpleObjectCheckExtension.Null``1(``0)">
+            <summary>
+            Check if given object is null
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:lib12.Misc.CachedObject`1">
+            <summary>
+            Container for easier accessing cached values
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:lib12.Misc.CachedObject`1.Get">
+            <summary>
+            Get object from store
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:lib12.Misc.Empty">
+            <summary>
+            Handles empty objects creation
+            </summary>
+        </member>
+        <member name="M:lib12.Misc.Empty.Array``1">
+            <summary>
+            Returns empty array of given type
+            </summary>
+            <typeparam name="T">Type of array</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Misc.Empty.List``1">
+            <summary>
+            Returns empty list of given type
+            </summary>
+            <typeparam name="T">Type of list</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Misc.Empty.Dictionary``2">
+            <summary>
+            Returns empty dictionary of given type
+            </summary>
+            <typeparam name="TKey">Type of key</typeparam>
+            <typeparam name="TValue">Type of value</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Misc.Empty.Enumerable``1">
+            <summary>
+            Returns empty enumerable of given type
+            </summary>
+        </member>
+        <member name="T:lib12.Misc.Logger">
+            <summary>
+            Simple logger
+            </summary>
+        </member>
+        <member name="P:lib12.Misc.Logger.FileName">
+            <summary>
+            File name of log file
+            </summary>
+        </member>
+        <member name="M:lib12.Misc.Logger.Info(System.String)">
+            <summary>
+            Log info message
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:lib12.Misc.Logger.Error(System.String)">
+            <summary>
+            Log error message
+            </summary>
+        </member>
+        <member name="M:lib12.Misc.Logger.Error(System.Exception)">
+            <summary>
+            Log exception
+            </summary>
+        </member>
+        <member name="T:lib12.Misc.PerformanceCheck">
+            <summary>
+            Helper class for checking performance
+            </summary>
+        </member>
+        <member name="M:lib12.Misc.PerformanceCheck.Check(System.Action)">
+            <summary>
+            Check performance of action
+            </summary>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="T:lib12.Misc.PropertyComparer`1">
+            <summary>
+            Compares two objects based on property value
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:lib12.Misc.PropertyComparer`1.#ctor(System.Func{`0,System.Object})">
+            <summary>
+            Initializes a new instance of the <see cref="T:lib12.Misc.PropertyComparer`1"/> class.
+            </summary>
+            <param name="keyExtractor">The key extractor.</param>
+        </member>
+        <member name="T:lib12.Misc.TimesLoop">
+            <summary>
+            Times loop - calls given function X times
+            </summary>
+        </member>
+        <member name="T:lib12.Misc.IoHelper">
+            <summary>
+            Helper functions for IO
+            </summary>
+        </member>
+        <member name="M:lib12.Misc.IoHelper.GetAppDataPath">
+            <summary>
+            Gets the application data path.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Misc.IoHelper.CreateDirectoryIfNotExist(System.String)">
+            <summary>
+            Creates the directory if not exist.
+            </summary>
+            <param name="path">The path to directory to check</param>
+        </member>
+        <member name="M:lib12.Misc.IoHelper.GetDefaultPath">
+            <summary>
+            Gets the default path of current computer - first hard drive's root
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:lib12.Crypto.SaltedHash">
+            <summary>
+            Helps produce salted hash
+            </summary>
+        </member>
+        <member name="M:lib12.Crypto.SaltedHash.GenerateSalt">
+            <summary>
+            Generates random salt.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Crypto.SaltedHash.ComputeHash(System.String,System.String)">
+            <summary>
+            Computes the hash.
+            </summary>
+            <param name="salt">The salt.</param>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Crypto.SaltedHash.Verify(System.String,System.String,System.String)">
+            <summary>
+            Verifies if hash matches salted password
+            </summary>
+            <param name="salt">The salt.</param>
+            <param name="hash">The hash.</param>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="T:lib12.Mathematics.Formula">
+            <summary>
+            Mathematics formulas parser and calculator using reverse polish notation
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.Formula.Text">
+            <summary>
+            Gets the formula's text.
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.Formula.Tokens">
+            <summary>
+            Gets the reverse polish notation tokens.
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.Formula.IsValid">
+            <summary>
+            Gets a value indicating whether formula is vali
+            </summary>
+        </member>
+        <member name="M:lib12.Mathematics.Formula.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:lib12.Mathematics.Formula"/> class.
+            </summary>
+            <param name="text">The formula's text.</param>
+        </member>
+        <member name="M:lib12.Mathematics.Formula.Parse(System.String)">
+            <summary>
+            Parses formula
+            </summary>
+            <param name="text">The formula's text.</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Mathematics.Formula.AddOperatorToStack(System.Collections.Generic.Stack{lib12.Mathematics.OperatorToken},System.Collections.Generic.ICollection{lib12.Mathematics.Token},lib12.Mathematics.OperatorToken)">
+            <summary>
+            Adds the RPN operator to stack.
+            </summary>
+            <param name="stack">The stack.</param>
+            <param name="output">The output.</param>
+            <param name="op">The operator</param>
+        </member>
+        <member name="M:lib12.Mathematics.Formula.Evaluate(System.Object)">
+            <summary>
+            Evaluates formula
+            </summary>
+            <param name="argument">The argument to take variables values from</param>
+            <returns></returns>
+            <exception cref="T:lib12.Mathematics.MathException">Formula is not valid, cannot evaluate it</exception>
+            <exception cref="T:lib12.Misc.UnknownEnumException`1"></exception>
+        </member>
+        <member name="M:lib12.Mathematics.Formula.GetValueForVariable(lib12.Mathematics.VariableToken,System.Object,System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo})">
+            <summary>
+            Gets the value for variable from given argument
+            </summary>
+            <param name="token">The token with variable</param>
+            <param name="argument">The argument - source of value</param>
+            <param name="argumentProperties">The argument properties.</param>
+            <returns></returns>
+            <exception cref="T:lib12.Mathematics.MathException">Given argument doesn't have property with name -  + token.Variable</exception>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:lib12.Mathematics.Formula.Compute(System.Double,System.Double,lib12.Mathematics.OperatorType)">
+            <summary>
+            Computes single RPN operation
+            </summary>
+            <param name="a">The first parameter</param>
+            <param name="b">The second parameter</param>
+            <param name="operatorType">Type of the operator.</param>
+            <returns></returns>
+            <exception cref="T:lib12.Misc.UnknownEnumException`1"></exception>
+        </member>
+        <member name="T:lib12.Mathematics.NegationToken">
+            <summary>
+            Negation token
+            </summary>
+        </member>
+        <member name="M:lib12.Mathematics.NegationToken.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:lib12.Mathematics.NegationToken"/> class.
+            </summary>
+        </member>
+        <member name="T:lib12.Mathematics.NumberToken">
+            <summary>
+            Number token
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.NumberToken.Number">
+            <summary>
+            Gets or sets the number.
+            </summary>
+        </member>
+        <member name="M:lib12.Mathematics.NumberToken.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:lib12.Mathematics.NumberToken"/> class.
+            </summary>
+            <param name="number">The number.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:lib12.Mathematics.NumberToken.Equals(System.Object)" -->
+        <member name="M:lib12.Mathematics.NumberToken.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="T:lib12.Mathematics.OperatorToken">
+            <summary>
+            Operator token
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.OperatorToken.Operator">
+            <summary>
+            Gets the operator type.
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.OperatorToken.Priority">
+            <summary>
+            Gets the operator priority.
+            </summary>
+        </member>
+        <member name="M:lib12.Mathematics.OperatorToken.#ctor(lib12.Mathematics.OperatorType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:lib12.Mathematics.OperatorToken"/> class.
+            </summary>
+            <param name="op">The operator</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:lib12.Mathematics.OperatorToken.Equals(System.Object)" -->
+        <member name="M:lib12.Mathematics.OperatorToken.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="T:lib12.Mathematics.OperatorType">
+            <summary>
+            Type of operator
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.OperatorType.Plus">
+            <summary>
+            The plus
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.OperatorType.Minus">
+            <summary>
+            The minus
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.OperatorType.Mult">
+            <summary>
+            The multiplication
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.OperatorType.Div">
+            <summary>
+            The division
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.OperatorType.LeftBraket">
+            <summary>
+            The left braket
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.OperatorType.RightBraket">
+            <summary>
+            The right braket
+            </summary>
+        </member>
+        <member name="T:lib12.Mathematics.QuadraticEquation">
+            <summary>
+            Quadratic equation computation
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.QuadraticEquation.A">
+            <summary>
+            The A parameter
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.QuadraticEquation.B">
+            <summary>
+            The B parameter
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.QuadraticEquation.C">
+            <summary>
+            The C parameter
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.QuadraticEquation.Delta">
+            <summary>
+            The delta coefficient
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.QuadraticEquation.ResultType">
+            <summary>
+            Type of result of equation
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.QuadraticEquation.FirstResult">
+            <summary>
+            Gets the first result.
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.QuadraticEquation.SecondResult">
+            <summary>
+            Gets the second result.
+            </summary>
+        </member>
+        <member name="M:lib12.Mathematics.QuadraticEquation.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:lib12.Mathematics.QuadraticEquation"/> class.
+            </summary>
+            <param name="a">The A parameter</param>
+            <param name="a">The B parameter</param>
+            <param name="a">The C parameter</param>
+        </member>
+        <member name="T:lib12.Mathematics.QuadraticEquationResultType">
+            <summary>
+            Describes type of quadratic equation result
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.QuadraticEquationResultType.NoResults">
+            <summary>
+            The equation has no results
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.QuadraticEquationResultType.OneResult">
+            <summary>
+            The equation has ono result
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.QuadraticEquationResultType.TwoResults">
+            <summary>
+            The equation has two results
+            </summary>
+        </member>
+        <member name="T:lib12.Mathematics.Token">
+            <summary>
+            The reverse polish notation token
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.Token.Type">
+            <summary>
+            Gets the token type.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:lib12.Mathematics.Token.Equals(System.Object)" -->
+        <member name="M:lib12.Mathematics.Token.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="T:lib12.Mathematics.TokenType">
+            <summary>
+            Type of reverse polish notation token
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.TokenType.Number">
+            <summary>
+            The number token
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.TokenType.Operator">
+            <summary>
+            The operator token
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.TokenType.Negation">
+            <summary>
+            The negation token
+            </summary>
+        </member>
+        <member name="F:lib12.Mathematics.TokenType.Variable">
+            <summary>
+            The variable token
+            </summary>
+        </member>
+        <member name="T:lib12.Mathematics.VariableToken">
+            <summary>
+            Variable token
+            </summary>
+        </member>
+        <member name="P:lib12.Mathematics.VariableToken.Variable">
+            <summary>
+            Gets the variable.
+            </summary>
+        </member>
+        <member name="M:lib12.Mathematics.VariableToken.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:lib12.Mathematics.VariableToken"/> class.
+            </summary>
+            <param name="variable">The variable.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:lib12.Mathematics.VariableToken.Equals(System.Object)" -->
+        <member name="M:lib12.Mathematics.VariableToken.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="T:lib12.Mathematics.MathExt">
+            <summary>
+            Set of various math functions
+            </summary>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.Next(System.Int32,System.Int32)">
+            <summary>
+            Returns next number from specified set
+            </summary>
+            <param name="number">Current number</param>
+            <param name="limit">Limit</param>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.Prev(System.Int32,System.Int32)">
+            <summary>
+            Returns previous number from specified set
+            </summary>
+            <param name="number">Current number</param>
+            <param name="limit">Limit</param>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.DivWithZero(System.Double,System.Double)">
+            <summary>
+            Try to divide two numbers, if impossible returns 0
+            </summary>
+            <param name="a">Number to divide</param>
+            <param name="b">Number to divide by</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.Iv(System.Boolean)">
+            <summary>
+            Iverson notation - if condition is true returns 1, otherwise 0
+            </summary>
+            <param name="condition">The condition.</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.Factorial(System.Int32)">
+            <summary>
+            Computes factorial for given number
+            </summary>
+            <param name="number">The number to compute factorial</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.Factorial(System.UInt32)">
+            <summary>
+            Computes factorial for given number
+            </summary>
+            <param name="number">The number to compute factorial</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.Factorial(System.Int64)">
+            <summary>
+            Computes factorial for given number
+            </summary>
+            <param name="number">The number to compute factorial</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.Factorial(System.UInt64)">
+            <summary>
+            Computes factorial for given number
+            </summary>
+            <param name="number">The number to compute factorial</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.BinomialCoefficient(System.Int32,System.Int32)">
+            <summary>
+            Computes binomial coefficient.
+            </summary>
+            <param name="n">The n.</param>
+            <param name="k">The k.</param>
+            <returns></returns>
+            <exception cref="T:lib12.Mathematics.MathException">Binomial coefficient can only be computed when both n and k are non negative</exception>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.BinomialCoefficient(System.UInt32,System.UInt32)">
+            <summary>
+            Computes binomial coefficient.
+            </summary>
+            <param name="n">The n.</param>
+            <param name="k">The k.</param>
+            <returns></returns>
+            <exception cref="T:lib12.Mathematics.MathException">Binomial coefficient can only be computed when both n and k are non negative</exception>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.BinomialCoefficient(System.Int64,System.Int64)">
+            <summary>
+            Computes binomial coefficient.
+            </summary>
+            <param name="n">The n.</param>
+            <param name="k">The k.</param>
+            <returns></returns>
+            <exception cref="T:lib12.Mathematics.MathException">Binomial coefficient can only be computed when both n and k are non negative</exception>
+        </member>
+        <member name="M:lib12.Mathematics.MathExt.BinomialCoefficient(System.UInt64,System.UInt64)">
+            <summary>
+            Computes binomial coefficient.
+            </summary>
+            <param name="n">The n.</param>
+            <param name="k">The k.</param>
+            <returns></returns>
+            <exception cref="T:lib12.Mathematics.MathException">Binomial coefficient can only be computed when both n and k are non negative</exception>
+        </member>
+        <member name="T:lib12.Reflection.CreateTypeAttribute">
+            <summary>
+            Describes which type is associated with enum
+            </summary>
+        </member>
+        <member name="M:lib12.Reflection.EnumReflectionExtension.CreateType``1(System.Enum)">
+            <summary>
+            Creates the type from given enum decorated with CreatedTypeAttribute
+            </summary>
+            <typeparam name="T">Created type</typeparam>
+            <param name="enumValue">The enum value to create type from</param>
+            <returns></returns>
+            <exception cref="T:lib12.lib12Exception">Given enum isn't decorated by CreateTypeAttribute</exception>
+        </member>
+        <member name="T:lib12.Reflection.ExpressionExtension">
+            <summary>
+            Extension methods for Expression class
+            </summary>
+        </member>
+        <member name="M:lib12.Reflection.ExpressionExtension.GetName``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Gets the name of property using in expression.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="expression">The expression.</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Reflection.ExpressionExtension.GetValue``2(System.Linq.Expressions.Expression{System.Func{``0,``1}},``0)">
+            <summary>
+            Gets the value of given expression for source
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="expression">The expression.</param>
+            <param name="source">The source of value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Reflection.ExpressionExtension.SetValue``2(System.Linq.Expressions.Expression{System.Func{``0,``1}},``0,``1)">
+            <summary>
+            Sets the value for given expression
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="expression">The expression.</param>
+            <param name="source">The source.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:lib12.Reflection.FieldInfoExtension.GetAttribute``1(System.Reflection.FieldInfo)">
+            <summary>
+            Gets the attribute decorating given property
+            </summary>
+            <param name="propertyinfo">The property to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Reflection.PropertyInfoExtension.GetAttribute``1(System.Reflection.PropertyInfo)">
+            <summary>
+            Gets the attribute decorating given property
+            </summary>
+            <param name="propertyinfo">The property to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Reflection.TypeExtension.IsTypeNumericOrNullableNumeric(System.Type)">
+            <summary>
+            Determines whether the specified type is numeric or nullable numeric
+            </summary>
+            <param name="type">The type to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Reflection.TypeExtension.IsTypeNumeric(System.Type)">
+            <summary>
+            Determines whether the specified type is numeric
+            </summary>
+            <param name="type">The type to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Reflection.TypeExtension.IsNullable(System.Type)">
+            <summary>
+            Determines whether the specified type nullable
+            </summary>
+            <param name="type">The type to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Reflection.TypeExtension.GetAttribute``1(System.Type)">
+            <summary>
+            Gets the attribute decorating given type
+            </summary>
+            <param name="type">The type to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Reflection.TypeExtension.GetDefault(System.Type)">
+            <summary>
+            Gets the default of given type
+            </summary>
+            <param name="type">The type to operate</param>
+            <returns></returns>
+        </member>
+        <member name="M:lib12.Reflection.TypeExtension.GetDefaultConstructor(System.Type)">
+            <summary>
+            Gets the default, parameterless constructor of given type or null if this not exist
+            </summary>
+            <param name="type">The type to operate</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

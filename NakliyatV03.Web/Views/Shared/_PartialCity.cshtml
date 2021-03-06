@@ -1,0 +1,21 @@
+﻿
+@using AraBulNakliyat.BusinessLayer 
+@using AraBulNakliyat.Entities
+@{
+
+CityManager cityManager = new CityManager();
+    List<City> list = cityManager.List();
+
+ }
+ <p class="lead">AraBul Nakliyat</p>
+ <div class="list-group">
+     <a href="/Home/Index" class="list-group-item"> <span class="glyphicon glyphicon-arrow-right"></span> Tümü </a>
+       @foreach (City city in list)
+       {
+
+        <a href="/Home/ByCity/@city.Id" title="@city.Description" class="list-group-item"><span class=" glyphicon glyphicon-arrow-right"></span>@city.Title </a>
+       }
+
+     
+   
+ </div>

@@ -1,0 +1,78 @@
+﻿@model IEnumerable<AraBulNakliyat.Entities.City>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <h2>Şehirler</h2>
+        <hr />
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <p>
+            @*@Html.ActionLink("Create New", "Create")*@
+            <a href="/City/Create" class="btn btn-success"> <span class="glyphicon glyphicon-plus"></span> Yeni Şehir Ekle </a>
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreatedOn)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ModifiedOn)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ModifiedUserName)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreatedOn)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ModifiedOn)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ModifiedUserName)
+                    </td>
+                    <td>
+                        <a href="/City/Edit/@item.Id" class="btn btn-warning btn-sm glyphicon-plus"> <span class="glyphicon glyphicon-edit"></span> Düzenle </a>
+
+                        <a href="/City/Details/@item.Id" class="btn btn-info btn-sm"> <span class="glyphicon glyphicon-search"></span> Detay </a>
+
+
+                        <a href="/City/Delete/@item.Id" class="btn btn-danger btn-sm"> <span class="glyphicon glyphicon-trash"></span> Sil </a>
+
+
+                        @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+    </div>
+
+</div>

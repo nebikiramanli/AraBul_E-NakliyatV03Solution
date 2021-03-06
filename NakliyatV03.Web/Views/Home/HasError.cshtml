@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Hata Oluştu";
+}
+
+<div class="row">
+    <div class="col-md-6 col-lg-offset-3">
+        @{
+            Exception exception = null;
+            if (TempData["LastError"] != null)
+            {
+                exception = TempData["LastError"] as Exception;
+            }
+        }
+        
+        <h1>
+            <span class="glyphicon glyphicon-remove"></span> Hata Oluştu
+        </h1>
+        
+        <p>
+            Hata oluştu lütfen yönetici ile iletişime geçiniz. <br /> <br /> <br />
+            
+            @if (exception != null)
+                {
+                    <strong> Hata Detayı  : </strong>
+                    @exception.Message <br/> <br/>
+                }
+            <a href="/Home/Index" class="btn btn-success">
+                <span class="glyphicon glyphicon-home"></span> Ana Sayfaya Git
+            </a>
+            <a href="mailto:nebikiramanli@gmail.com" class="btn btn-primary">
+                <span class="glyphicon glyphicon-send"></span> E-Posta Gönder
+            </a>
+        </p>
+    </div>
+</div>

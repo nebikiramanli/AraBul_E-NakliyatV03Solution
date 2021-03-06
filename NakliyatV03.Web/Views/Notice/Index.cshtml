@@ -1,0 +1,114 @@
+﻿@using NakliyatV03.Web.Models
+@model IEnumerable<AraBulNakliyat.Entities.Notice>
+
+@{
+    ViewBag.Title = "İlanlarım";
+}
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <h2>@ViewBag.Title</h2>
+        <hr />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <p>
+            <a href="/Notice/Create" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Yeni İlan Ver</a>
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.City.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Text)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsDraft)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LikeCount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreatedOn)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ModifiedOn)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ModifiedUserName)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Text)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsDraft)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LikeCount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreatedOn)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ModifiedOn)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ModifiedUserName)
+                    </td>
+                    <td width="300">
+                        <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#modal_comment" data-notice-id="@item.Id">
+                            <span class="glyphicon glyphicon-comment"></span> Yorumlar
+                        </button>
+                       
+                            <a href="/Notice/Edit/@item.Id" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-edit"></span> Düzenle</a>
+                            <a href="/Notice/Details/@item.Id" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span> Detaylar</a>
+                            <a href="/Notice/Delete/@item.Id" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-edit"></span> Sil</a>
+                        
+
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal_comment" tabindex="-1" role="dialog" aria-labelledby="modal_comment_label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" id="modal_comment_header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modal_comment_label">Yorumlar</h4>
+            </div>
+            <div class="modal-body" id="modal_comment_body">
+
+            </div>
+            <div class="modal-footer" id="modal_comment_footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">  Kapat </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Scripts/comment.js"></script>

@@ -1,0 +1,6 @@
+C:\Users\Nebi Kıramanlıoğlu\source\repos\NakliyatV03Solution\AraBulNakliyat.Entities\bin\Debug\AraBulNakliyat.Entities.dll
+C:\Users\Nebi Kıramanlıoğlu\source\repos\NakliyatV03Solution\AraBulNakliyat.Entities\bin\Debug\AraBulNakliyat.Entities.pdb
+C:\Users\Nebi Kıramanlıoğlu\source\repos\NakliyatV03Solution\AraBulNakliyat.Entities\obj\Debug\AraBulNakliyat.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Nebi Kıramanlıoğlu\source\repos\NakliyatV03Solution\AraBulNakliyat.Entities\obj\Debug\AraBulNakliyat.Entities.dll
+C:\Users\Nebi Kıramanlıoğlu\source\repos\NakliyatV03Solution\AraBulNakliyat.Entities\obj\Debug\AraBulNakliyat.Entities.pdb
+C:\Users\Nebi Kıramanlıoğlu\source\repos\NakliyatV03Solution\AraBulNakliyat.Entities\obj\Debug\AraBulNakliyat.Entities.csprojAssemblyReference.cache

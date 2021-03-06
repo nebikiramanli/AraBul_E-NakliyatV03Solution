@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "About";
+}
+
+<div class="container">
+    <div class="row">
+        <!-- Kategoriler -->
+        <div class="col-md-3">
+            @Html.Partial("_PartialCity")
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <h2>
+                    Hakkımızda Sayfasıdır
+                </h2>
+                <img src="http://placehold.it/500x200" class="center-block img-responsive img-rounded img-thumbnail" alt="Alternate Text" />
+                <p>
+                    @FakeData.TextData.GetSentences(40)
+                </p>
+                <p>
+                    @FakeData.TextData.GetSentences(40)
+                </p>
+
+            </div>
+           
+        </div>
+    </div>
+</div>
+
